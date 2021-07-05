@@ -1,4 +1,4 @@
-package com.example.messages.fragment.sign_in;
+package com.example.messages.Fragment.SignIn;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -23,9 +23,9 @@ import androidx.navigation.Navigation;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.textfield.TextInputEditText;
-import com.mobile.messageclone.Model.CountryToPhonePrefix;
-import com.mobile.messageclone.R;
-import com.mobile.messageclone.ViewModel.SignInViewModel;
+import com.example.messages.R;
+import com.example.messages.ViewModel.SignInViewModel;
+import com.example.messages.Model.CountryToPhonePrefix;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -38,7 +38,7 @@ import io.michaelrocks.libphonenumber.android.Phonenumber;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link com.mobile.messageclone.fragment.SignIn.SignInFragment#newInstance} factory method to
+ * Use the {@link com.example.messages.Fragment.SignIn.SignInFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class SignInFragment extends Fragment {
@@ -78,8 +78,8 @@ public class SignInFragment extends Fragment {
      * @return A new instance of fragment SignIn.
      */
     // TODO: Rename and change types and number of parameters
-    public static com.mobile.messageclone.fragment.SignIn.SignInFragment newInstance(String param1, String param2) {
-        com.mobile.messageclone.fragment.SignIn.SignInFragment fragment = new com.mobile.messageclone.fragment.SignIn.SignInFragment();
+    public static com.example.messages.Fragment.SignIn.SignInFragment newInstance(String param1, String param2) {
+        com.example.messages.Fragment.SignIn.SignInFragment fragment = new com.example.messages.Fragment.SignIn.SignInFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -145,7 +145,7 @@ public class SignInFragment extends Fragment {
             @Override
             public void onClick(View v) {
 
-                com.mobile.messageclone.fragment.SignIn.CountryCodeDialogFragment countryCodeDialogFragment=new com.mobile.messageclone.fragment.SignIn.CountryCodeDialogFragment();
+                com.example.messages.Fragment.SignIn.CountryCodeDialogFragment countryCodeDialogFragment=new com.example.messages.Fragment.SignIn.CountryCodeDialogFragment();
                 countryCodeDialogFragment.show(getParentFragmentManager(),null);
 
 

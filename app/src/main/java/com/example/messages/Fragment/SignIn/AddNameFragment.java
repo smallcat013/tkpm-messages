@@ -1,4 +1,4 @@
-package com.example.messages.fragment.sign_in;
+package com.example.messages.Fragment.SignIn;
 
 import android.net.Uri;
 import android.os.Bundle;

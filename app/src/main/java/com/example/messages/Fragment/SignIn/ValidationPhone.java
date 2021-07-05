@@ -1,4 +1,4 @@
-package com.example.messages.fragment.sign_in;
+package com.example.messages.Fragment.SignIn;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;

@@ -1,4 +1,4 @@
-package com.example.messages.fragment.sign_in;
+package com.example.messages.Fragment.SignIn;
 
 import android.os.Bundle;
 import android.text.Editable;
@@ -17,11 +17,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.textfield.TextInputEditText;
-import com.mobile.messageclone.Model.CountryToPhonePrefix;
-import com.mobile.messageclone.R;
-import com.mobile.messageclone.RecycerViewAdapater.CountryListAdapter;
-import com.mobile.messageclone.Ulti.RecyclerViewClickInterface;
-import com.mobile.messageclone.ViewModel.SignInViewModel;
+import com.example.messages.Model.CountryToPhonePrefix;
+import com.example.messages.R;
+import com.example.messages.RecycerViewAdapater.CountryListAdapter;
+import com.example.messages.Ulti.RecyclerViewClickInterface;
+import com.example.messages.ViewModel.SignInViewModel;
 
 import java.util.ArrayList;
 
