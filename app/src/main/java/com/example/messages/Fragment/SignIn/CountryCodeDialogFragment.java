@@ -19,7 +19,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.example.messages.Model.CountryToPhonePrefix;
 import com.example.messages.R;
-import com.example.messages.RecycerViewAdapater.CountryListAdapter;
+import com.example.messages.RecyclerViewAdapter.CountryListAdapter;
 import com.example.messages.Ulti.RecyclerViewClickInterface;
 import com.example.messages.ViewModel.SignInViewModel;
 

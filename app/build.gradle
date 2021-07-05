@@ -34,7 +34,12 @@ dependencies {
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
     implementation 'androidx.navigation:navigation-runtime:2.3.1'
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+    implementation 'com.google.firebase:firebase-database:19.5.1'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    implementation 'io.michaelrocks:libphonenumber-android:8.12.12'
+    implementation 'com.github.mukeshsolanki:android-otpview-pinview:2.1.2'
+    implementation 'com.mikhaellopez:circularimageview:4.2.0'
 }

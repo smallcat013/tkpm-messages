@@ -28,7 +28,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.PhoneAuthCredential;
 import com.google.firebase.auth.PhoneAuthOptions;
 import com.google.firebase.auth.PhoneAuthProvider;
-import com.mobile.messageclone.R;
+import com.example.messages.R;
 import com.mukesh.OnOtpCompletionListener;
 import com.mukesh.OtpView;
 
@@ -36,7 +36,7 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link com.mobile.messageclone.fragment.SignIn.ValidationPhone#newInstance} factory method to
+ * Use the {@link com.example.messages.Fragment.SignIn.ValidationPhone#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class ValidationPhone extends Fragment {
@@ -71,8 +71,8 @@ public class ValidationPhone extends Fragment {
      * @return A new instance of fragment ValidationPhone.
      */
     // TODO: Rename and change types and number of parameters
-    public static com.mobile.messageclone.fragment.SignIn.ValidationPhone newInstance(String param1, String param2) {
-        com.mobile.messageclone.fragment.SignIn.ValidationPhone fragment = new com.mobile.messageclone.fragment.SignIn.ValidationPhone();
+    public static com.example.messages.Fragment.SignIn.ValidationPhone newInstance(String param1, String param2) {
+        com.example.messages.Fragment.SignIn.ValidationPhone fragment = new com.example.messages.Fragment.SignIn.ValidationPhone();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);

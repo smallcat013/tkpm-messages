@@ -19,12 +19,12 @@ import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.FirebaseDatabase;
-import com.mobile.messageclone.Model.User;
-import com.mobile.messageclone.R;
+import com.example.messages.Model.User;
+import com.example.messages.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link com.mobile.messageclone.fragment.SignIn.AddNameFragment#newInstance} factory method to
+ * Use the {@link com.example.messages.Fragment.SignIn.AddNameFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
 public class AddNameFragment extends Fragment {
@@ -65,8 +65,8 @@ public class AddNameFragment extends Fragment {
      * @return A new instance of fragment RegisterFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static com.mobile.messageclone.fragment.SignIn.AddNameFragment newInstance(String param1, String param2) {
-        com.mobile.messageclone.fragment.SignIn.AddNameFragment fragment = new com.mobile.messageclone.fragment.SignIn.AddNameFragment();
+    public static com.example.messages.Fragment.SignIn.AddNameFragment newInstance(String param1, String param2) {
+        com.example.messages.Fragment.SignIn.AddNameFragment fragment = new com.example.messages.Fragment.SignIn.AddNameFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
