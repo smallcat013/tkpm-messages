@@ -31,13 +31,13 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.mikhaellopez.circularimageview.CircularImageView;
-import com.mobile.messageclone.Model.Contact;
-import com.mobile.messageclone.Model.User;
-import com.mobile.messageclone.R;
-import com.mobile.messageclone.RecycerViewAdapater.ContactListHomeAdapter;
-import com.mobile.messageclone.Ulti.ActivityUlti;
-import com.mobile.messageclone.Ulti.DrawProfilePicture;
-import com.mobile.messageclone.ViewModel.ChatViewModel;
+import com.example.messages.Model.Contact;
+import com.example.messages.Model.User;
+import com.example.messages.R;
+import com.example.messages.RecyclerViewAdapter.ContactListHomeAdapter;
+import com.example.messages.Ulti.ActivityUlti;
+import com.example.messages.Ulti.DrawProfilePicture;
+import com.example.messages.ViewModel.ChatViewModel;
 
 import org.jetbrains.annotations.NotNull;
 

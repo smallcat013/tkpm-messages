@@ -1,4 +1,4 @@
-package com.mobile.messageclone.fragment.Chat;
+package com.example.messages.Fragment.Chat;
 
 import com.google.firebase.database.DataSnapshot;
 

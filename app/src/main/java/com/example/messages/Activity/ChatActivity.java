@@ -49,20 +49,20 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ServerValue;
 import com.google.firebase.database.ValueEventListener;
 import com.mikhaellopez.circularimageview.CircularImageView;
-import com.mobile.messageclone.Ulti.DrawProfilePicture;
-import com.mobile.messageclone.Model.CallInfor;
-import com.mobile.messageclone.R;
-import com.mobile.messageclone.ViewModel.ChatViewModel;
-import com.mobile.messageclone.fragment.Chat.OnGetDataListener;
-import com.mobile.messageclone.Ulti.ActivityUlti;
-import com.mobile.messageclone.fragment.VoiceCall.VoiceCallScreenFragment;
-import com.sinch.android.rtc.PushPair;
-import com.sinch.android.rtc.Sinch;
-import com.sinch.android.rtc.SinchClient;
-import com.sinch.android.rtc.calling.Call;
-import com.sinch.android.rtc.calling.CallClient;
-import com.sinch.android.rtc.calling.CallClientListener;
-import com.sinch.android.rtc.calling.CallListener;
+import com.example.messages.Ulti.DrawProfilePicture;
+// import com.example.messages.Model.CallInfor;
+import com.example.messages.R;
+import com.example.messages.ViewModel.ChatViewModel;
+import com.example.messages.Fragment.Chat.OnGetDataListener;
+import com.example.messages.Ulti.ActivityUlti;
+// import com.example.messages.Fragment.VoiceCall.VoiceCallScreenFragment;
+//import com.sinch.android.rtc.PushPair;
+//import com.sinch.android.rtc.Sinch;
+//import com.sinch.android.rtc.SinchClient;
+//import com.sinch.android.rtc.calling.Call;
+//import com.sinch.android.rtc.calling.CallClient;
+//import com.sinch.android.rtc.calling.CallClientListener;
+//import com.sinch.android.rtc.calling.CallListener;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
@@ -93,9 +93,9 @@ public class ChatActivity extends AppCompatActivity implements ActivityUlti {
     private ValueEventListener changeImageListener;
     private ChatViewModel chatViewModel;
 
-    private Call call;
-    private SinchClient sinchClient;
-    private VoiceCallScreenFragment voiceCallScreenFragment;
+    //private Call call;
+    //private SinchClient sinchClient;
+    //private VoiceCallScreenFragment voiceCallScreenFragment;
     private String callerName;
     private String receiverName;
     private int isCaller;
@@ -313,7 +313,7 @@ public class ChatActivity extends AppCompatActivity implements ActivityUlti {
         firebaseDatabase.getReference().child("USER").child(firebaseAuth.getCurrentUser().getUid()).child("STATUS").child("Time").onDisconnect().setValue(ServerValue.TIMESTAMP);
 
 
-
+        /*
         sinchClient = Sinch.getSinchClientBuilder()
                 .context(this)
                 .applicationKey("6389d8f4-8a3f-4299-9b0c-883535d7688f")
@@ -332,9 +332,9 @@ public class ChatActivity extends AppCompatActivity implements ActivityUlti {
         this.callerName = "Name";
         this.receiverName = "Name";
         this.voiceCallScreenFragment = new VoiceCallScreenFragment(callerName);
-
+        */
     }
-
+    /*
     private class SinchCallClientListener implements CallClientListener {
         @Override
         public void onIncomingCall(CallClient callClient, Call inComingCall) {
@@ -483,7 +483,7 @@ public class ChatActivity extends AppCompatActivity implements ActivityUlti {
     }
 
 
-
+    */
 
     @Override
     public boolean onSupportNavigateUp() {

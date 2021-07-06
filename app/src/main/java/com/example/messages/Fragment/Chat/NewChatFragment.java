@@ -24,12 +24,12 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.instacart.library.truetime.TrueTimeRx;
-import com.mobile.messageclone.Model.ContactAndSeenTime;
-import com.mobile.messageclone.R;
-import com.mobile.messageclone.RecycerViewAdapater.ContactListAdapter;
-import com.mobile.messageclone.Ulti.RecyclerViewClickInterface;
-import com.mobile.messageclone.Model.Contact;
-import com.mobile.messageclone.ViewModel.ChatViewModel;
+import com.example.messages.Model.ContactAndSeenTime;
+import com.example.messages.R;
+import com.example.messages.RecyclerViewAdapter.ContactListAdapter;
+import com.example.messages.Ulti.RecyclerViewClickInterface;
+import com.example.messages.Model.Contact;
+import com.example.messages.ViewModel.ChatViewModel;
 
 import java.text.SimpleDateFormat;
 import java.time.Instant;
