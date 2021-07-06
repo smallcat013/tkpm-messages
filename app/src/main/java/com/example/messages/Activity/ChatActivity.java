@@ -1,4 +1,4 @@
-package com.mobile.messages.Activity;
+package com.example.messages.Activity;
 
 
 import androidx.annotation.NonNull;

@@ -81,7 +81,7 @@ public class ContactListHomeAdapter extends RecyclerView.Adapter<com.example.mes
 
     @NonNull
     @Override
-    public com.mobile.messageclone.RecycerViewAdapater.ContactListHomeAdapter.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public com.example.messages.RecyclerViewAdapter.ContactListHomeAdapter.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         LayoutInflater layoutInflater= LayoutInflater.from(context);
         View root;
         switch(viewType)
@@ -99,7 +99,7 @@ public class ContactListHomeAdapter extends RecyclerView.Adapter<com.example.mes
     }
 
     @Override
-    public void onBindViewHolder(@NonNull com.mobile.messageclone.RecycerViewAdapater.ContactListHomeAdapter.viewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull com.example.messages.RecyclerViewAdapter.ContactListHomeAdapter.viewHolder holder, int position) {
 
 
         switch (holder.getItemViewType())

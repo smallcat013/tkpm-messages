@@ -27,10 +27,10 @@ import com.example.messages.Model.Group;
 import com.example.messages.Model.Message;
 import com.example.messages.R;
 import com.example.messages.Model.ContactLastMessTime;
-import com.example.messages.RecycerViewAdapater.ContactListHomeAdapter;
-import com.mobile.messageclone.Ulti.RecyclerViewClickInterface;
-import com.mobile.messageclone.Model.Contact;
-import com.mobile.messageclone.ViewModel.ChatViewModel;
+import com.example.messages.RecyclerViewAdapter.ContactListHomeAdapter;
+import com.example.messages.Ulti.RecyclerViewClickInterface;
+import com.example.messages.Model.Contact;
+import com.example.messages.ViewModel.ChatViewModel;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;

@@ -27,8 +27,8 @@ import com.example.messages.Model.ContactAndSeenTime;
 import com.example.messages.Model.Group;
 import com.example.messages.Model.Message;
 import com.example.messages.R;
-import com.example.messages.RecycerViewAdapater.ContactListAdapter;
-import com.example.messages.RecycerViewAdapater.ContactListHomeAdapter;
+import com.example.messages.RecyclerViewAdapter.ContactListAdapter;
+import com.example.messages.RecyclerViewAdapter.ContactListHomeAdapter;
 import com.example.messages.Ulti.GenerateChatID;
 import com.example.messages.ViewModel.NewGroupViewModel;
 
