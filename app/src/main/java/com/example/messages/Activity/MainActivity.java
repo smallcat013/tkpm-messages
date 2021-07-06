@@ -1,4 +1,4 @@
-package com.mobile.messageclone.Activity;
+package com.example.messages.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -11,8 +11,8 @@ import android.util.Log;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 import com.instacart.library.truetime.TrueTimeRx;
-import com.mobile.messageclone.Model.User;
-import com.mobile.messageclone.R;
+import com.example.messages.Model.User;
+import com.example.messages.R;
 
 import io.reactivex.schedulers.Schedulers;
 
