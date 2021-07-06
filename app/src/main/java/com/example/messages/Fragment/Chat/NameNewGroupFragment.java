@@ -1,4 +1,4 @@
-package com.mobile.messageclone.fragment.Chat;
+package com.example.messages.Fragment.Chat;
 
 import android.os.Bundle;
 import android.util.Log;

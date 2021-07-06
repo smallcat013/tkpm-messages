@@ -1,4 +1,4 @@
-package com.mobile.messageclone.fragment.Chat;
+package com.example.messages.Fragment.Chat;
 
 import android.content.Context;
 import android.icu.util.Calendar;
@@ -25,11 +25,12 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.instacart.library.truetime.TrueTimeRx;
 import com.example.messages.Model.ContactAndSeenTime;
-import com.example.messages.R;
+
 import com.example.messages.RecyclerViewAdapter.ContactListAdapter;
 import com.example.messages.Ulti.RecyclerViewClickInterface;
 import com.example.messages.Model.Contact;
 import com.example.messages.ViewModel.ChatViewModel;
+import com.example.messages.R;
 
 import java.text.SimpleDateFormat;
 import java.time.Instant;

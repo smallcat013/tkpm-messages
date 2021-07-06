@@ -1,4 +1,4 @@
-package com.mobile.messageclone.fragment.Chat;
+package com.example.messages.Fragment.Chat;
 
 import android.content.Context;
 import android.os.Build;
@@ -129,7 +129,7 @@ public class EditGroupMember extends Fragment implements RecyclerViewClickInterf
         contactListAdapter.SetClickInterface(this);
         contactListAdapter.SetCheckBoxInterface(this::CheckBoxClick);
 
-        contactListAdapter.contactKeyMatch=memberList;
+        //contactListAdapter.contactKeyMatch=memberList;
 
         RecyclerViewContact.setAdapter(contactListAdapter);
 
@@ -139,7 +139,7 @@ public class EditGroupMember extends Fragment implements RecyclerViewClickInterf
         displayAddedUser=root.findViewById(R.id.textDisplayContactAdded);
         contactListAdapter.itemStateArray=sparseBooleanArray;
 
-        contactListAdapter.contactKeyMatch=memberList;
+        //contactListAdapter.contactKeyMatch=memberList;
 
 
         for (int i=0;i<contactnameList.size();i++)

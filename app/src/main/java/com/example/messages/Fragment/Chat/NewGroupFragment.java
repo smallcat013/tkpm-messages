@@ -1,4 +1,4 @@
-package com.mobile.messageclone.fragment.Chat;
+package com.example.messages.Fragment.Chat;
 
 import android.content.Context;
 import android.os.Build;
@@ -20,7 +20,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.example.messages.Model.ContactAndSeenTime;
-//import com.example.messages.Model.GroupMember;
 import com.example.messages.R;
 import com.example.messages.RecyclerViewAdapter.ContactListNewGroupChatAdapter;
 import com.example.messages.Ulti.RecyclerCheckBoxClick;
@@ -108,7 +107,6 @@ public class NewGroupFragment extends Fragment implements RecyclerViewClickInter
         RecyclerViewContact.setLayoutManager(new LinearLayoutManager(getContext()));
 
         contactListAdapter=new ContactListNewGroupChatAdapter(getContext(),contactAndSeenTimeArrayList,getActivity());
-        contactListAdapter.contactKeyMatch=null;
         contactListAdapter.SetClickInterface(this);
         contactListAdapter.SetCheckBoxInterface(this::CheckBoxClick);
 
@@ -232,13 +230,10 @@ public class NewGroupFragment extends Fragment implements RecyclerViewClickInter
                 ArrayList<ContactAndSeenTime>contactAndSeenTimes=new ArrayList<>();
                 ArrayList<String>contactName=new ArrayList<>();
                 ArrayList<String>imgUrl=new ArrayList<>();
-                ArrayList<GroupMember>groupMembers=new ArrayList<>();
                 for (int i=0;i<contactListAdapter.contactAndSeenTimeList.size();i++)
                 {
                     if (contactListAdapter.itemStateArray.get(i)==true)
                     {
-
-
                         contactName.add(contactListAdapter.contactAndSeenTimeList.get(i).contact.getFirstNickName()+" "+contactListAdapter.
                                 contactAndSeenTimeList.get(i).contact.getLastNickName());
                         imgUrl.add(contactListAdapter.contactAndSeenTimeList.get(i).imageUrl);
@@ -303,7 +298,7 @@ public class NewGroupFragment extends Fragment implements RecyclerViewClickInter
         bundle.putString("ContactID",contactAndSeenTimeArrayList.get(position).contact.getUserIdContact());
         //bundle.putString("ContactName",contactAndSeenTimeArrayList.get(position).contact.getFirstNickName()+" "+contactAndSeenTimeArrayList.get(position).contact.getLastNickName());
 
-       // NavController navController= Navigation.findNavController(getView());
+        // NavController navController= Navigation.findNavController(getView());
 //        navController.navigate(R.id.action_fragment_contact_to_chat_fragment,bundle);
     }
 

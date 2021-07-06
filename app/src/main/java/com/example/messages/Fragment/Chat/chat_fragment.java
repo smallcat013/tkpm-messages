@@ -1,4 +1,4 @@
-package com.mobile.messageclone.fragment.Chat;
+package com.example.messages.Fragment.Chat;
 
 import android.graphics.Bitmap;
 import android.graphics.Color;
@@ -45,6 +45,7 @@ import com.example.messages.Activity.ChatActivity;
 import com.example.messages.Model.Author;
 import com.example.messages.Model.LibMessage;
 import com.example.messages.Model.Message;
+
 import com.example.messages.R;
 import com.example.messages.RecyclerViewAdapter.CustomOutComingMessageViewHolder;
 import com.example.messages.RecyclerViewAdapter.MessageAdapter;
@@ -368,7 +369,7 @@ public class chat_fragment extends Fragment {
         MessageHolders holdersConfig=new MessageHolders().setOutcomingTextLayout(R.layout.one_row_message_sender).setOutcomingTextHolder(CustomOutComingMessageViewHolder.class,null);
         if (ChatType==ContactListHomeAdapter.CHAT_GROUP)
         {
-            holdersConfig.setIncomingTextLayout(R.layout.one_row_group_message_received).setIncomingTextHolder(CustomIntComingMessageViewHolder.class,getContext());
+            holdersConfig.setIncomingTextLayout(R.layout.one_row_group_message_received).setIncomingTextHolder(CustomInComingMessageViewHolder.class,getContext());
         }
 
         ImageLoader imageLoader=new ImageLoader() {
