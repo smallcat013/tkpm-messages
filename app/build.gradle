@@ -1,25 +1,34 @@
-plugins {
-    id 'com.android.application'
-    id 'com.google.gms.google-services'
-}
-
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 android {
-    compileSdkVersion 30
-    buildToolsVersion "30.0.1"
+    signingConfigs {
+        release {
+            storePassword '123456'
+            keyAlias 'key0'
+            keyPassword '123456'
+
+
+
+        }
+    }
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
-        applicationId "com.example.messages"
-        minSdkVersion 29
-        targetSdkVersion 30
+        applicationId "com.mobile.messageclone"
+        minSdkVersion 26
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
     }
 
     buildTypes {
         release {
             minifyEnabled false
+            signingConfig signingConfigs.debug
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
@@ -30,6 +39,7 @@ android {
 }
 
 dependencies {
+    compile(name:'sinch-android-rtc', version:'+', ext:'aar')
 
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.appcompat:appcompat:1.2.0'
@@ -117,5 +127,6 @@ dependencies {
 
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
 
 }
