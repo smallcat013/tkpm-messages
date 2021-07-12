@@ -283,7 +283,7 @@ public class ChatProfileGroupFragmment extends Fragment {
                     Group group=snapshot.getValue(Group.class);
                     if (group.getIdAdmin().equals(UserID))
                     {
-                        btnEditContact.setVisibility(View.GONE);
+                        btnEditContact.setVisibility(View.VISIBLE);
                     }
                     if (group.getGroupImg().isEmpty()==false)
                     {
@@ -443,6 +443,8 @@ public class ChatProfileGroupFragmment extends Fragment {
 
 
     }
+
+
 
     @Override
     public void onDetach() {

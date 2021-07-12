@@ -250,7 +250,7 @@ public class EditGroupMember extends Fragment implements RecyclerViewClickInterf
             public void onClick(View v) {
                 if (sparseBooleanArray.size()==0)
                 {
-                    Toast.makeText(getContext(),"Please choose at lease one member",Toast.LENGTH_SHORT).show();
+
                     return;
                 }
 
@@ -269,6 +269,12 @@ public class EditGroupMember extends Fragment implements RecyclerViewClickInterf
                         contactID.add(contactListAdapter.contactAndSeenTimeList.get(i).contact.getUserIdContact());
 
                     }
+                }
+
+                if (contactID.isEmpty() == true )
+                {
+                    Toast.makeText(getContext(),"Please choose at lease one member",Toast.LENGTH_SHORT).show();
+                    return;
                 }
 
 

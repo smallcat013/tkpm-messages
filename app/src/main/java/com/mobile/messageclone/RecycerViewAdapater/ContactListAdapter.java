@@ -22,7 +22,7 @@ import com.mobile.messageclone.Ulti.RecyclerViewClickInterface;
 
 import java.util.ArrayList;
 
-public class ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.viewHolder>{
+public class  ContactListAdapter extends RecyclerView.Adapter<ContactListAdapter.viewHolder>{
 
 
     Context context;
